@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 function App() {
-  const generateRandomNumber = () => Math.floor(Math.random() * 100) + 1;
+  const generateRandomNumber = () => Math.floor(Math.random() * 10) + 1;
 
   const [randomNumber, setRandomNumber] = useState(generateRandomNumber);
   const [guess, setGuess] = useState("");
@@ -38,7 +38,7 @@ function App() {
       <div className="bg-white/10 backdrop-blur-lg p-6 rounded-2xl shadow-xl text-center w-96 border border-white/20">
         <h1 className="text-3xl font-bold mb-4">🎯 Guess the Number</h1>
         <p className="mb-4 text-lg font-light">
-          Guess a number between <b>1 and 100</b>
+          Guess a number between <b>1 and 10</b>
         </p>
 
         <input
